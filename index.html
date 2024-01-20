@@ -11,13 +11,13 @@
 <body>
     <header>
         <nav class="bg-[#0E1133] py-6">
-            <div class="container mx-auto px-8 lg:px-24">
+            <div class="container mx-auto px-8 lg:px-40">
                 <div class="flex text-white justify-between">
                     <div class="flex justify-center items-center space-x-8">
                         <div>
                             <img src="./assets/logo-3.png" alt="logo">
                         </div>
-                        <div class="space-x-4 text-lg font-semibold">
+                        <div class="space-x-4 text-lg font-semibold hidden lg:flex">
                             <a class="hover:text-slate-400 duration-300" href="#">Home</a>
                             <a class="hover:text-slate-400 duration-300" href="#">About</a>
                             <a class="hover:text-slate-400 duration-300" href="#">Services</a>
@@ -25,9 +25,12 @@
                             <a class="hover:text-slate-400 duration-300" href="#">Contact</a>
                         </div>
                     </div>
-                    <div class="space-x-6">
+                    <div class="space-x-6 hidden lg:flex">
                         <button class="text-lg font-semibold">Login</button>
                         <button class="bg-orange-600 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-transparent border-2 border-orange-600 duration-300">Get Started</button>
+                    </div>
+                    <div class="lg:hidden">
+                        <img class="w-8 h-8" src="./assets/more.png" alt="hamburger">
                     </div>
                 </div>
             </div>
